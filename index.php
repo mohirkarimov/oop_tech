@@ -7,6 +7,16 @@ class Car {
     public $model;
     public $year;
 
+    public function __construct($model, $year) {
+    
+        $this->model = $model; 
+        $this->year = $year;
+    
+    }
+
+
+
+
     /// methods
 
     function drive(){
@@ -25,34 +35,8 @@ class Car {
 
 }
 
-$bmw = new Car();
+$bmw = new Car('bmw', '2014');
 
-$bmw->setModel('BMW-M322');
-$bmw->year = '2019';
+$audi = new Car('audi', 'dodge');
 
-
- echo $bmw->model; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
+var_dump($audi);
